@@ -1,0 +1,41 @@
+# Visual Studio
+.vscode/
+*.csproj.user
+*.csproj.nuget.dgspec.json
+*.csproj.nuget.g.props
+*.csproj.nuget.g.targets
+bin/
+obj/
+
+# ASP.NET, .NET Core & General C#
+*.exe
+*.dll
+*.pdb
+*.cache
+*.log
+*.vs/
+*.apphost
+.project/
+.vscode/
+.DS_Store
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+dist/
+
+# AWS Lambda Deployment
+*.zip
+.lambda/SummarizeLambdaHandler/publish
+
+# Secrets/Keys (ensure this for security)
+.env
+.env.local
+*.secret
+
+# OS-specific files
+Thumbs.db
+Desktop.ini
+.DS_Store

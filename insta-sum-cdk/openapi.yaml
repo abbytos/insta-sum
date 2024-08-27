@@ -1,0 +1,32 @@
+openapi: 3.0.0
+info:
+  title: InstaSum API
+  version: '1.0'
+paths:
+  /summarize:
+    post:
+      x-amazon-apigateway-integration:
+        type: aws_proxy
+        httpMethod: POST
+        uri: arn:aws:apigateway:${region}:lambda:path/2015-03-31/functions/${lambdaArn}/invocations
+      responses:
+        '200':
+          description: Successful response
+  /status/{request_id}:
+    get:
+      x-amazon-apigateway-integration:
+        type: aws_proxy
+        httpMethod: GET
+        uri: arn:aws:apigateway:${region}:lambda:path/2015-03-31/functions/${lambdaArn}/invocations
+      responses:
+        '200':
+          description: Successful response
+  /custom-models:
+    post:
+      x-amazon-apigateway-integration:
+        type: aws_proxy
+        httpMethod: POST
+        uri: arn:aws:apigateway:${region}:lambda:path/2015-03-31/functions/${lambdaArn}/invocations
+      responses:
+        '200':
+          description: Successful response

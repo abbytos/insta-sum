@@ -1,0 +1,44 @@
+{
+  "resource": "/summary",
+  "path": "/summary",
+  "httpMethod": "POST",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "multiValueHeaders": {
+    "Content-Type": [ "application/json" ]
+  },
+  "queryStringParameters": null,
+  "multiValueQueryStringParameters": null,
+  "pathParameters": null,
+  "stageVariables": null,
+  "requestContext": {
+    "resourceId": "resource-id",
+    "resourcePath": "/summary",
+    "httpMethod": "POST",
+    "extendedRequestId": "request-id",
+    "requestTime": "08/Aug/2024:00:00:00 +0000",
+    "path": "/summary",
+    "accountId": "account-id",
+    "protocol": "HTTP/1.1",
+    "stage": "prod",
+    "domainPrefix": "prefix",
+    "requestTimeEpoch": 1234567890,
+    "region": "region",
+    "requestId": "request-id",
+    "identity": {
+      "cognitoIdentityPoolId": null,
+      "accountId": null,
+      "cognitoIdentityId": null,
+      "apiKey": "api-key",
+      "apiKeyId": "api-key-id",
+      "cognitoAuthenticationType": null,
+      "cognitoAuthenticationProvider": null,
+      "userArn": "user-arn",
+      "userAgent": "user-agent",
+      "user": null
+    }
+  },
+  "body": "{\"text\": \"SQL databases have been the backbone of enterprise applications since the 1970s...\"}",
+  "isBase64Encoded": false
+}
