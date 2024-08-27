@@ -1,6 +1,4 @@
-[submodule "insta-sum-cdk"]
-	path = insta-sum-cdk
-	url = https://github.com/abbytos/insta-sum-cdk.git
+
 [submodule "insta-sum-frontend"]
 	path = insta-sum-frontend
 	url = https://github.com/abbytos/insta-sum-frontend.git
