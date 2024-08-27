@@ -68,3 +68,10 @@ insta-sum-cdk/*.suo
 insta-sum-frontend/node_modules/
 insta-sum-frontend/dist/
 insta-sum-frontend/.vscode/
+
+# Insta-sum Frontend specific files
+insta-sum-fronted/.env
+insta-sum-fronted/.cache/
+insta-sum-fronted/.next/
+insta-sum-fronted/out/
+insta-sum-fronted/node_modules/
