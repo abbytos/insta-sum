@@ -1,0 +1,93 @@
+/* Darkened overlay with subtle blur effect */
+#popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Darkened transparent background */
+  z-index: 999;
+  cursor: pointer;
+}
+
+/* Refined summary popup style */
+#summary-popup {
+  position: fixed;
+  top: 0;
+  right: -400px; /* Start off-screen */
+  width: 400px;
+  height: 100%; /* Full height */
+  background-color: #fefefe;
+  padding: 20px 30px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25); /* Slightly darker shadow */
+  z-index: 1000;
+  transition: right 0.5s ease; /* Smooth slide-in transition */
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  overflow-y: auto; /* Scroll if content is too long */
+}
+
+/* Slide-in animation for the popup */
+.popup-slide-in {
+  right: 0; /* Slide into view */
+}
+
+/* Header styling with modern look */
+#summary-popup h2 {
+  font-size: 22px;
+  color: #2c3e50;
+  border-bottom: 2px solid #1abc9c;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+/* Refined paragraph style */
+#summary-popup p {
+  font-size: 16px;
+  color: #34495e;
+  margin: 16px 0;
+  line-height: 1.7;
+}
+
+/* Improved list styling with better spacing and alignment */
+#summary-popup ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+#summary-popup ul li {
+  margin-bottom: 12px;
+  padding-left: 24px;
+  position: relative;
+  font-size: 16px;
+  color: #333;
+}
+
+#summary-popup ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #1abc9c;
+  font-size: 20px;
+  line-height: 1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Adding hover effect to make the popup more interactive */
+#summary-popup:hover {
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  #summary-popup {
+    width: 70%;
+    right: -100%;
+  }
+
+  .popup-slide-in {
+    right: 5%;
+  }
+}
