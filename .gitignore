@@ -1,0 +1,70 @@
+# Global ignore rules
+.DS_Store
+Thumbs.db
+
+# Node modules (for JavaScript/TypeScript projects)
+node_modules/
+
+# Environment files
+.env
+*.env
+
+# Build directories and artifacts
+dist/
+build/
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE/editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs_analysis.dat
+*.njsproj
+*.sln
+*.sw?
+
+# CDK build files (for AWS CDK projects)
+cdk.out/
+
+# Yarn package files
+yarn-error.log
+
+# NPM package files
+package-lock.json
+
+# Logs
+*.log
+
+# Miscellaneous
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# Coverage reports
+coverage/
+
+# Debug files
+*.dSYM
+*.pdb
+
+# insta-sum-cdk specific ignore rules
+insta-sum-cdk/node_modules/
+insta-sum-cdk/cdk.out/
+insta-sum-cdk/bin/
+insta-sum-cdk/obj/
+insta-sum-cdk/lambda/lambda-package.zip
+insta-sum-cdk/lambda/SummarizeLambdaHandler/publish
+insta-sum-cdk/.vs/
+insta-sum-cdk/.vscode/
+insta-sum-cdk/*.user
+insta-sum-cdk/*.suo
+
+# insta-sum-frontend specific ignore rules
+insta-sum-frontend/node_modules/
+insta-sum-frontend/dist/
+insta-sum-frontend/.vscode/
